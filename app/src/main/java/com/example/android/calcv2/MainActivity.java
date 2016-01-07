@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private String operation = "";
     private boolean reset = true;
     private boolean equal = false;
+    private boolean lastPressed = true; // ensures the last button pressed wasn't an operator
     
     public void updateNumber(String number) {
         if (!reset) {
@@ -30,9 +31,13 @@ public class MainActivity extends AppCompatActivity {
             currentNumber += number;
             showDisplay();
         }
+        lastPressed = false;
     }
 
     public void addModifier(String modifier) {
+        if (lastPressed) {
+            return;
+        }
         if (!previousNumber.equals("") && !equal) {
             previousNumber = Double.toString(calculateResult());
         }
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         showDisplay();
         reset = true;
         equal = false;
+        lastPressed = true;
     }
 
     public double calculateResult() {
@@ -72,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         operation = "";
         reset = true;
         equal = false;
+        lastPressed = true;
     }
 
     @Override
