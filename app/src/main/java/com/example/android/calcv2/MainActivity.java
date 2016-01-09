@@ -111,7 +111,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void showDisplay() {
         TextView calcDisplay = (TextView) findViewById(R.id.display);
+        ScrollView scrollDisplay = (ScrollView) findViewById(R.id.scroller);
         calcDisplay.setText(String.valueOf(display));
+        scrollDisplay.fullScroll(View.FOCUS_DOWN);
     }
     
     public void equal(View v) {
