@@ -127,7 +127,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="multiply"
-            android:text="x"
+            android:text="*"
             android:textSize="@dimen/abc_text_size_large_material" />
 
     </LinearLayout>
