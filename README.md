@@ -11,3 +11,8 @@ This contains the java code and logic for the app.  It sets the behavior for the
 https://github.com/adh636/CalculatorApp/blob/master/app/src/main/res/layout/activity_main.xml
 
 This contains the xml code for the UI that is seen when the app is opened.
+
+
+# Screenshot
+
+![calculatorappscreenshot](https://cloud.githubusercontent.com/assets/12743215/12214467/f9e09a26-b662-11e5-8f1f-4b4421732038.jpg)
