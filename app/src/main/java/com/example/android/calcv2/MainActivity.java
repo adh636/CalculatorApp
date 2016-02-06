@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             currentNumber = "-" + currentNumber;
         }
+        display += currentNumber
         showDisplay();
     }
     */
