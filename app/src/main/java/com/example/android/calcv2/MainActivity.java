@@ -129,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
     }
     
     // implementation not yet correct (not updating display)
+    /*
     public void plusMinus(View v) {
         if(currentNumber.substring(0, 1).equals("-")) {
             currentNumber = currentNumber.substring(1);
@@ -138,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         }
         showDisplay();
     }
+    */
 
     public void one(View v) {
         updateNumber("1");
