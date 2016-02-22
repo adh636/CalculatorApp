@@ -50,7 +50,6 @@
             android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@color/blue"
-            android:onClick="plusMinus"
             android:text="+/-"
             android:textSize="@dimen/abc_text_size_large_material" />
 
