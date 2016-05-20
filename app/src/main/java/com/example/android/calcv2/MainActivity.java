@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // executes whenever a number or decimal point is pressed
-    public void updateNumber(String number) {
+    private void updateNumber(String number) {
 
         // if last button pressed was "=", resets before updating number
         if (!reset) {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // executes whenever a modifier is pressed (+, -, *, /)
-    public void addModifier(String modifier) {
+    private void addModifier(String modifier) {
 
         // do nothing if a number or equal wasn't last button pressed
         if (lastPressed) {
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
     }
     
     // return solution based on which operator was pressed last
-    public double calculateResult() {
+    private double calculateResult() {
         if (operation.equals("+")) {
             return Double.parseDouble(previousNumber) + Double.parseDouble(currentNumber);
         }
@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
     }
     
     // set all variables to default values
-    public void resetAll() {
+    private void resetAll() {
         display = "0";
         currentNumber = "";
         previousNumber = "";
